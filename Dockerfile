@@ -2,6 +2,7 @@ FROM alpine
 
 RUN apk add bash zsh less
 RUN apk add build-base
+RUN apk add strace
 
 WORKDIR /linux-ipc
 
