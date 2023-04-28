@@ -27,6 +27,6 @@ RUN cc src/unix-socket-fork.c -o bin/unix-socket-fork
 RUN cc src/unix-socket-server.c -o bin/unix-socket-server
 RUN cc src/yes.c -o bin/yes
 
-COPY zshrc /root/.zshrc
+COPY .zshrc /root/
 
 ENTRYPOINT [ "/bin/zsh" ]
